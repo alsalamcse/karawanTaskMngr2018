@@ -10,4 +10,16 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
     }
+
+    @Override
+    protected void onResume() {
+        MyThred myThred =new MyThread();
+        super.onResume();
+    }
+    public class MyThread extends thread
+    {
+
+
+    }
 }
+///
