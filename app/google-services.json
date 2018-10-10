@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "32996219054",
+    "firebase_url": "https://karawantaskmngr2018.firebaseio.com",
+    "project_id": "karawantaskmngr2018",
+    "storage_bucket": "karawantaskmngr2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32996219054:android:cd6d283ef614f995",
+        "android_client_info": {
+          "package_name": "om.banat.karawan.karawantaskmngr2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32996219054-j2pr5g90jnnu2apdc4fv3eigtt7ajg6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "om.banat.karawan.karawantaskmngr2018",
+            "certificate_hash": "bace785c20fc4fbb11d8b6953b1f1c63e0a041d0"
+          }
+        },
+        {
+          "client_id": "32996219054-qal3j6om29q20qv9o90nnaa64e6qtrr2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDipwqaZ2Sv-xBKm-X1m3oSuHfhp1F9Q_A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32996219054-qal3j6om29q20qv9o90nnaa64e6qtrr2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
