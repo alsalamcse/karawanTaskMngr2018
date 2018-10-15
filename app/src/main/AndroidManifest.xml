@@ -19,7 +19,9 @@
         <activity
             android:name=".MainaTabsActivity"
             android:label="@string/title_activity_maina_tabs"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignInActivity"></activity>
     </application>
 
 </manifest>

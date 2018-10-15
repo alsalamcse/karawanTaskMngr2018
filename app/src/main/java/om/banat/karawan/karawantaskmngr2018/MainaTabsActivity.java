@@ -19,6 +19,10 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import om.banat.karawan.karawantaskmngr2018.taskfragments.MyTasksFragment;
+import om.banat.karawan.karawantaskmngr2018.taskfragments.ProfileFragment;
+import om.banat.karawan.karawantaskmngr2018.taskfragments.TaskHistoryFragment;
+
 public class MainaTabsActivity extends AppCompatActivity {
 
     /**
@@ -130,6 +134,9 @@ public class MainaTabsActivity extends AppCompatActivity {
      * one of the sections/tabs/pages.
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
+        MyTasksFragment myTasksFragment;
+        TaskHistoryFragment taskHistoryFragment;
+        ProfileFragment profileFragment;
 
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -137,11 +144,21 @@ public class MainaTabsActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            if (position == 0) {
+                if (myTasksFragment == null)
+                    myTasksFragment = new MyTasksFragment();
+                return myTasksFragment;
+            }
+            if (position == 1) {
+                if (taskHistoryFragment == null)
+                    taskHistoryFragment = new TaskHistoryFragment();
+                return taskHistoryFragment;
+            }
+            if ((position == 2))
+                if (profileFragment == null)
+                    profileFragment = new ProfileFragment();
+            return profileFragment;
         }
-
         @Override
         public int getCount() {
             // Show 3 total pages.
