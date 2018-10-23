@@ -131,12 +131,13 @@ btnSave.setOnClickListener(new View.OnClickListener() {
 
 
 
-    private void creatAcount;(String email,String
+
 
     public EditText getEtpassword() {
         return etpassword;
-    ) {
-        String password;
+    }
+    private void creatAcount(String email,String password)
+    {
         auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(SignInActivity.this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {

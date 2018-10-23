@@ -21,7 +21,8 @@
             android:label="@string/title_activity_maina_tabs"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SignInActivity"></activity>
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".AddTaskActivity"></activity>
     </application>
 
 </manifest>
