@@ -16,7 +16,8 @@
         android:text="Name"
         tools:layout_editor_absoluteX="75dp"
         tools:layout_editor_absoluteY="0dp"
-        tools:text="Title" />
+        tools:text="Title"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/edText"
@@ -28,7 +29,8 @@
         android:text="Name"
         tools:layout_editor_absoluteX="75dp"
         tools:layout_editor_absoluteY="61dp"
-        tools:text="Text" />
+        tools:text="Text"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvImportant"
@@ -37,7 +39,8 @@
         android:text="TextView"
         tools:layout_editor_absoluteX="118dp"
         tools:layout_editor_absoluteY="148dp"
-        tools:text="Important" />
+        tools:text="Important"
+        tools:ignore="MissingConstraints" />
 
     <SeekBar
         android:id="@+id/skbrImportant"
@@ -48,13 +51,15 @@
         android:max="10"
         android:progress="3"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="167dp" />
+        tools:layout_editor_absoluteY="167dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvNecceary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="118dp"
         tools:layout_editor_absoluteY="221dp"
         tools:text="Necceary" />
@@ -67,16 +72,18 @@
         android:max="10"
         android:progress="3"
         tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="235dp" />
+        tools:layout_editor_absoluteY="235dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="410dp"
-        tools:text="save" />
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="400dp"
+        tools:text="save"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/etDuetDate"
@@ -85,6 +92,7 @@
         android:ems="10"
         android:inputType="date"
         android:text="DuetDate"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="291dp" />
 
@@ -93,8 +101,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="349dp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="352dp"
         tools:text="DatePicker" />
 
 </android.support.constraint.ConstraintLayout>

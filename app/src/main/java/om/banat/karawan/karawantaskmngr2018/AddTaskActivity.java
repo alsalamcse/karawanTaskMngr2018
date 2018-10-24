@@ -30,15 +30,16 @@ public class AddTaskActivity extends AppCompatActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btnDatePicker.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
 
-                    }
-                });
             }
-
         });
+         btnDatePicker.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+
+             }
+         });
+
 
 
 
