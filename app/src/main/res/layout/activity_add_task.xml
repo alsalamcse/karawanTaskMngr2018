@@ -14,8 +14,9 @@
         android:hint="Title"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:text="Title" />
 
     <EditText
         android:id="@+id/edText"
@@ -25,24 +26,75 @@
         android:hint="Text"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="61dp" />
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="61dp"
+        tools:text="Text" />
 
     <TextView
         android:id="@+id/tvImportant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="135dp"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="148dp"
         tools:text="Important" />
 
     <SeekBar
+        android:id="@+id/skbrImportant"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="282dp"
-        android:layout_height="39dp"
+        android:layout_width="196dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="112dp"
         android:max="10"
         android:progress="3"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="160dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <TextView
+        android:id="@+id/tvNecceary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="221dp"
+        tools:text="Necceary" />
+
+    <SeekBar
+        android:id="@+id/skbrNecceary"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="191dp"
+        android:layout_height="37dp"
+        android:max="10"
+        android:progress="3"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="235dp" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="410dp"
+        tools:text="save" />
+
+    <EditText
+        android:id="@+id/etDuetDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:text="DuetDate"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="349dp"
+        tools:text="DatePicker" />
+
 </android.support.constraint.ConstraintLayout>
