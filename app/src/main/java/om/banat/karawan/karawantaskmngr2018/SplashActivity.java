@@ -1,5 +1,6 @@
 package om.banat.karawan.karawantaskmngr2018;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -22,7 +23,10 @@ public class SplashActivity extends AppCompatActivity {
         public void run() {
             try {
                 sleep(3000);
-            } catch (InterruptedException e) {
+                Intent i  = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(i);
+            }
+            catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }

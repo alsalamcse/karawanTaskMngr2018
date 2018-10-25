@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import om.banat.karawan.karawantaskmngr2018.R;
 import om.banat.karawan.karawantaskmngr2018.taskfragments.MyTasksFragment.OnListFragmentInteractionListener;
 import om.banat.karawan.karawantaskmngr2018.taskfragments.dummy.DummyContent.DummyItem;
 

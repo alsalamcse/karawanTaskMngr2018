@@ -26,7 +26,6 @@ public class SignInActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private FirebaseUser user;
     private Button btnSave;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,94 +43,35 @@ public class SignInActivity extends AppCompatActivity {
 btnSave.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-
+        dataHandler();
     }
 });
      dataHandler();
-
         }
-
     private void dataHandler() {
         boolean isok = true;
         String email = etemail.getText().toString();
         String password = etpassword.getText().toString();
-        String firstName = etfirstname.getText().toString();
+        String firstName =etfirstname.getText().toString();
         String lastName = etlastname.getText().toString();
         String phone = etphone.getText().toString();
+        if (email.length() < 4 || email.indexOf('@') < 0 || email.indexOf('.') < 0) {
+           etemail.setError("wrong Email");
 
-        if (email.length() < 4 || email.indexOf('@')<0 || email.indexOf('.')<0)
-        {
-            etemail.setError("wrong Email");
-            {
-                isok = false;
+            isok = false;
 
-            }
-            if (password.length() < 8) {
-                etpassword.setError("Have to be least 8 char");
-                isok = false;
-            }
-            if (isok) {
-
-
-            }
         }
-
-        else
-            etemail.setError("wrong Email");
-            {
-                isok = false;
-
-            }
-            if (password.length() < 8) {
-                etpassword.setError("Have to be least 8 char");
-                isok = false;
-            }
-
-
-
-
+        if (password.length() < 8) {
+            etpassword.setError("Have to be least 8 char");
+            isok = false;
         }
 
 
+        if (isok) {
+            creatAcount(email , password);
 
-
-
-
-
-
-
-
-
-
-
-        //* creat firebase user using email password
-
-
-
-
-    FirebaseAuth.AuthStateListener authStateListener = new FirebaseAuth.AuthStateListener() {
-
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                //4.
-                FirebaseUser user = firebaseAuth.getCurrentUser();
-                if (user != null) {
-                    //user is signed in
-                    Toast.makeText(SignInActivity.this, "user is signed in.", Toast.LENGTH_SHORT).show();
-
-                } else {
-                    //user signed out
-                    Toast.makeText(SignInActivity.this, "user signed out.", Toast.LENGTH_SHORT).show();
-
-
-                }
-                
-            }
-        };
-
-
-
-
+        }
+    }
 
     public EditText getEtpassword() {
         return etpassword;
