@@ -30,24 +30,23 @@ public class SignInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-        etfirstname=(EditText)findViewById(R.id.etfirstname);
-        etlastname=(EditText)findViewById(R.id.etlastname);
-        etphone=(EditText)findViewById(R.id.etphone);
-        etemail=(EditText)findViewById(R.id.etemail);
-        etpassword=(EditText)findViewById(R.id.etPassword);
+        etfirstname = (EditText) findViewById(R.id.etfirstname);
+        etlastname = (EditText) findViewById(R.id.etlastname);
+        etphone = (EditText) findViewById(R.id.etphone);
+        etemail = (EditText) findViewById(R.id.etemail);
+        etpassword = (EditText) findViewById(R.id.etPassword);
         auth = FirebaseAuth.getInstance();
-        user=auth.getCurrentUser();
+        user = auth.getCurrentUser();
         FirebaseUser firebaseUser;
         firebaseUser = auth.getCurrentUser();
-        btnSave=(Button) this.<View>findViewById(R.id.btnSave);
-btnSave.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        dataHandler();
+        btnSave = (Button) this.<View>findViewById(R.id.btnSave);
+        btnSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dataHandler();
+            }
+        });
     }
-});
-     dataHandler();
-        }
     private void dataHandler() {
         boolean isok = true;
         String email = etemail.getText().toString();

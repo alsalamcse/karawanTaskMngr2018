@@ -14,6 +14,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         MyThread myThred = new MyThread();
+        myThred.start();
         super.onResume();
     }
 
