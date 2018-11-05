@@ -22,7 +22,6 @@ public class SignInActivity extends AppCompatActivity {
      private  EditText etphone;
       private  EditText etemail;
     private EditText etpassword;
-    //1.
     private FirebaseAuth auth;
     private FirebaseUser user;
     private Button btnSave;
@@ -64,11 +63,8 @@ public class SignInActivity extends AppCompatActivity {
             etpassword.setError("Have to be least 8 char");
             isok = false;
         }
-
-
         if (isok) {
             creatAcount(email , password);
-
         }
     }
 
@@ -78,19 +74,19 @@ public class SignInActivity extends AppCompatActivity {
     private void creatAcount(String email,String password)
     {
         auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(SignInActivity.this, new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful())
-                {
-                    Toast.makeText(SignInActivity.this, "Authentication Successful.", Toast.LENGTH_SHORT).show();
-                    //updateUserProfile(task.getResult().getUser());
-                    finish();
-                }
-                else
-                {
-                    Toast.makeText(SignInActivity.this, "Authentication failed."+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                    task.getException().printStackTrace();
-                }
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful())
+                        {
+                            Toast.makeText(SignInActivity.this, "Authentication Successful.", Toast.LENGTH_SHORT).show();
+                            //updateUserProfile(task.getResult().getUser());
+                            finish();
+                        }
+                        else
+                        {
+                            Toast.makeText(SignInActivity.this, "Authentication failed."+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            task.getException().printStackTrace();
+                        }
             }
         });
         btnSave.setOnClickListener(new View.OnClickListener() {

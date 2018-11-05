@@ -13,34 +13,30 @@
         android:ems="10"
         android:hint="Title"
         android:inputType="textPersonName"
-        android:text="Name"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:text="Title"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="0dp" />
 
     <EditText
         android:id="@+id/edText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Text"
+        android:hint="Name"
         android:inputType="textPersonName"
-        android:text="Name"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="61dp"
-        tools:text="Text"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="69dp" />
 
     <TextView
         android:id="@+id/tvImportant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="148dp"
-        tools:text="Important"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:text="Important" />
 
     <SeekBar
         android:id="@+id/skbrImportant"
@@ -51,8 +47,8 @@
         android:max="10"
         android:progress="3"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="167dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="149dp" />
 
     <TextView
         android:id="@+id/tvNecceary"
@@ -60,8 +56,8 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="221dp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="202dp"
         tools:text="Necceary" />
 
     <SeekBar
@@ -71,9 +67,9 @@
         android:layout_height="37dp"
         android:max="10"
         android:progress="3"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="235dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="221dp" />
 
     <Button
         android:id="@+id/btnSave"
@@ -90,19 +86,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="DueDate"
         android:inputType="date"
-        android:text="DuetDate"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="291dp" />
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="269dp" />
 
     <Button
         android:id="@+id/btnDatePicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="352dp"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="340dp"
         tools:text="DatePicker" />
 
 </android.support.constraint.ConstraintLayout>
