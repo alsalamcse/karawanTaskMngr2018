@@ -1,5 +1,7 @@
 package om.banat.karawan.karawantaskmngr2018.Data;
 
+import android.widget.SeekBar;
+
 import java.util.Date;
 
 public class MyTask
@@ -44,7 +46,7 @@ public class MyTask
         return important;
     }
 
-    public void setImportant(int important) {
+    public void setImportant(SeekBar important) {
         this.important = important;
     }
 
@@ -52,7 +54,7 @@ public class MyTask
         return necessary;
     }
 
-    public void setNecessary(int necessary) {
+    public void setNecessary(SeekBar necessary) {
         this.necessary = necessary;
     }
 

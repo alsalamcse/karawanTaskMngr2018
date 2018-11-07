@@ -12,7 +12,12 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.Calendar;
+import java.util.Date;
+
+import om.banat.karawan.karawantaskmngr2018.Data.MyTask;
 
 public class AddTaskActivity extends AppCompatActivity {
     private EditText edTitle,edText,etDueDate;
@@ -65,7 +70,20 @@ public class AddTaskActivity extends AppCompatActivity {
                 {
                     if (DueDate.length() < 4) ;
                     etDueDate.setError(" DueDate have to be more than 4 char");
+                    isok=false;
                 }
+                MyTask task=new MyTask();
+                task.setCreatedAt(new Date());
+                task.setDueDate(new Date(String.valueOf(etDueDate)));
+                task.setText(text);
+                task.setTitle(title);
+                task.setImportant(skbrImportant);
+                task.setNecessary(skbrNecceary);
+
+                FirebaseAuth auth=FirebaseAuth.getInstance();
+
+
+
 
             }
 
