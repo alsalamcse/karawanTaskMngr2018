@@ -9,10 +9,11 @@ public class MyTask
     private String key;
     private String title;
     private String text;
-    private int important;
-    private int necessary;
+    private SeekBar important;
+    private SeekBar necessary;
     private Date createdAt;
     private Date dueDate;
+    private String owner;
 
    public MyTask()
    {
@@ -42,7 +43,7 @@ public class MyTask
         this.text = text;
     }
 
-    public int getImportant() {
+    public SeekBar getImportant() {
         return important;
     }
 
@@ -50,7 +51,7 @@ public class MyTask
         this.important = important;
     }
 
-    public int getNecessary() {
+    public SeekBar getNecessary() {
         return necessary;
     }
 
@@ -73,4 +74,14 @@ public class MyTask
     public void setDueDate(Date dueDate) {
         this.dueDate = dueDate;
     }
+
+    public void setOwner(String owner) {
+       this.owner = owner;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
+
