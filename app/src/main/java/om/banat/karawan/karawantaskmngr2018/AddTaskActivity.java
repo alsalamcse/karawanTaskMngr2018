@@ -103,31 +103,24 @@ public class AddTaskActivity extends AppCompatActivity {
 
                     });
                 }
-
-
             }
-
-
-            public void onClick (View v){
-                if ((v == btnDatePicker)) {
-                    final Calendar c = Calendar.getInstance();
-                    mYear = c.get(Calendar.YEAR);
-                    mMonth = c.get(Calendar.MONTH);
-                    mDay = c.get(Calendar.DAY_OF_MONTH);
-                    DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
-                        @Override
-                        public void onDateSet(DatePicker view, int year, int monthOfyear, int dayOfMonth) {
-                            etDueDate.setText(dayOfMonth + "-" + (monthOfyear + 1) + "-" + year);
-                        }
-                    }, mYear, mMonth, mDay);
-                    datePickerDialog.show();
-                }
+            public void onClick(View v)
+            if ((v==btnDatePicker)){
+                final Calendar c = Calendar.getInstance();
+                mYear = c.get(Calendar.YEAR);
+                mMonth = c.get(Calendar.MONTH);
+                mDay = c.get(Calendar.DAY_OF_MONTH);
+                DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfyear, int dayOfMonth) {
+                        etDueDate.setText(dayOfMonth + "-" + (monthOfyear + 1) + "-" + year);
+                    }
+                }, mYear, mMonth, mDay);
+                datePickerDialog.show();
             }
 
         }
     }
 }
-
-
 
 
